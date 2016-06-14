@@ -1,0 +1,48 @@
+@media (max-width: 960px)
+{
+	body nav.navbar.navbar-default .container{width: 100%;}
+	body nav.navbar-default{padding: 0;}
+	body nav.navbar.navbar-default.affix .navbar-header{width: 30%;}
+	body .navbar-brand > div{margin-top: 5%;}
+}
+
+@media (max-width: 800px)
+{
+	body nav.navbar.navbar-default .container{font-size:0.7em;}
+	body nav.navbar.navbar-default.affix .navbar-header{width: 38%;}
+	body .navbar-brand > div{margin-top: 3%;}
+}
+
+@media (max-width: 767px){	
+	body .navbar-brand > span,
+	body nav.navbar.navbar-default.affix .navbar-brand > span
+	{width: 50px;}
+	body .navbar-header{width: 100%;}
+	body .navbar-brand > div{margin-top: 0;}
+	body nav.navbar.navbar-default.affix .navbar-header{width: 100%;}
+	body #navbar-1.navbar-collapse{background:#000829 none repeat scroll 0 0;border:1px solid #46bc08;position:absolute;right:20px;top:52px;width:200px;max-height: none;height: 220px;}
+	body #navbar-1.navbar-collapse::before{border-bottom:20px solid #46bc08;border-left:20px solid rgba(0,0,0,0);border-right:20px solid rgba(0,0,0,0);content:"";height:0;position:fixed;right:22px;top:58px;}
+	body nav.navbar.navbar-default.affix #navbar-1.navbar-collapse{top: 63px;}
+	body nav.navbar.navbar-default.affix #navbar-1.navbar-collapse::before{top: 58px;}
+	body .item .carousel-caption{font-size:0.7em;}
+}
+@media (max-width: 480px){	
+	body #navbar-1.navbar-collapse{top: 58px;}
+	body nav.navbar.navbar-default.affix #navbar-1.navbar-collapse{top: 62px;}
+	body .carousel-inner > .item{min-height:380px;}
+	body #slide-hdef img{bottom:0;left:0;margin:auto;max-width:700px;opacity:0.4;position:absolute;right:0;top:0;}
+	body .blq-cont, body .blq-logo{width: 100%;padding-left: 0;padding-right: 0;}
+	body .blq-logo a{margin:auto auto 20px;width:80px;}
+
+}
+@media (max-width: 360px){	
+	body .carousel-inner > .item{min-height:300px;font-size: 0.7em;}
+	body #slide-hdef img{bottom:0;left:0;margin:auto;max-width:550px;opacity:0.4;position:absolute;right:0;top:0;}
+	body .item1 .carousel-caption{height: 80px;}
+	body .item2 .carousel-caption{height: 130px;}
+	body .item4 .carousel-caption{height: 120px;}
+	body .item .carousel-caption p:not(:first-of-type){text-shadow:0 0 0;}
+	body .navbar-brand > div{font-size: 1em;}
+	body .navbar-brand > div span{width: 120px;letter-spacing: 8px;}
+	body #navbar-1.navbar-collapse{top: 64px;}
+}
