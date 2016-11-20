@@ -27,7 +27,7 @@ $(document).ready(function(){
 });
 $(document).ready(function () {
     $("nav").find("li").on("click", "a", function () {
-        $('.navbar-collapse.in').collapse('hide');
+        $('.hdef-g .navbar-collapse.in').collapse('hide');
     });
 });
 (function( $ ) {
@@ -67,3 +67,9 @@ $(document).ready(function () {
   });  
   
 })(jQuery);
+$('.modal').on('hide.bs.modal', function(e) {    
+    var $if = $(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/empty.html');
+    $if.attr("src", src);
+});

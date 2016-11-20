@@ -5,6 +5,7 @@
 
 	<title>Danux 2016</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/styles_slider.css">
@@ -12,7 +13,7 @@
 	<link rel="stylesheet" href="css/media-query.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
 </head>
-<body data-spy="scroll" data-target="#navbar-1">
+<body data-spy="scroll" data-target="#navbar-1" class="hdef-g">
 	<div class="container-fluid">
 		<header>
 			<nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="10" role="navigation">
@@ -28,20 +29,16 @@
 							<span>
 								<img src="images/logo-hdef.png" alt="Hack Defender">
 							</span>
-							<div>
-								Hack Defender
-								<span>Academy</span>
-							</div>
-
 						</a>
 					</div>
 					<div class="collapse navbar-collapse" id="navbar-1">
 						<ul class="nav navbar-right navbar-nav" role="tablist">
-							<li role="presentation" class=""><a href="#seccion1">Certification</a></li>
-							<li role="presentation"><a href="#seccion2">How it works?</a></li>
-							<li role="presentation"><a href="#seccion3">Blog</a></li>
-							<li role="presentation"><a href="#seccion4">Arsenal</a></li>
-							<li role="presentation" class="dropdown"><a href="#seccion5">About</a></li>
+							<li role="presentation" class=""><a href="#seccion1">Certifications</a></li>
+							<li role="presentation"><a href="#howtoworks">How it works</a></li>
+							<li role="presentation"><a href="#charity">Charity</a></li>
+							<li role="presentation"><a href="#seccion4">Demos</a></li>
+							<li role="presentation" class="dropdown"><a href="#seccion5">Contacto</a></li>
+							<li role="presentation"><a data-toggle="modal" data-target="#login" src="#">Enter to Academy</a></li>
 						</ul>
 					</div>
 				</div>
@@ -63,8 +60,9 @@
 				<img src="images/slide_1.jpg" alt="Slider de Hack Defender">
 				<div class="carousel-caption" >
 					<!-- <h1 class="test">From the authors of Gray Hat Hacking Book.<span>|</span></h1> -->
-					<p data-animation="animated bounceIn">From the creator of Gray Hat Hacking Book 4 th</p>
+					<p data-animation="animated bounceIn">From the creator of Gray Hat Hacking Book 4<sup>th</sup></p>
 					<p data-animation="animated bounceInUp">Sharing their experience learned from the best security companies in the world</p>
+					<p data-animation="animated bounceInLeft"><img src="images/grayhat.jpg" alt=""></p>
 				</div>
 			</div>
 
@@ -108,88 +106,129 @@
 		</a>
 	</div>
 	
-	<!--  -->
+	<!-- Secciones  -->
 	<div class="main cont-space">
 		<div class="container-fluid">
 			<div class="container">
 				<section id="seccion1" class="seccion-pd">
 					<h2>Certifi<span>cations</span></h2>
-					<div class="sc-cont">
-						<div class="blq-left-logo blq-logo">
-							<a data-toggle="modal" data-target="#atmd" src="#"><img src="images/logo-hdef.png" alt="Hack Defender"></a>
-						</div>
-						<div class="blq-cont-right blq-cont">
-							<h3>ATM Malware Defender<span>ATMD (On-site only)</span></h3>
-							<p>Did you hear about Ploutus or Padpin/Tyupkin or more recently Suceful ATM Malware affecting banks
-							worldwide?</p>
-							<p>The researcher who dissected those threats for the first time to the world has prepared this amazing
-							and first ATM Malware training of its kind.</p>
-							<p>Learn how the malware is transferred to the ATM,how Ploutus spit out money by sending a SMS
-							message,how Tyupkin intercept the keys entered via the Pinpad or how Suceful plays with the
-							sensors to avoid raising an alarm,and many more techniques!</p>
-							<p>All those techniques learned using a REAL ATM,come and learn how to protect your cash if you are a
-							bank or how to prevent being stolen if you are the cardholder.</p>
-						</div>
-						<div class="modal fade" id="atmd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h4 class="modal-title" id="myModalLabel">ATM Malware Defender<span>ATMD (On-site only)</h4>
-									</div>
-									<div class="modal-body">
-										<div class="embed-responsive embed-responsive-16by9">
-											<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/dP15zlyra3c?html5=1"></iframe>
-										</div>
-									</div>
-								</div>
+					<ul>
+						<li class="cert1 certs wow slideInLeft"><a href="atmd.html"><h3>ATMD<span>ATMD Defender</span></h3><span><img src="images/c-atmd.png" alt=""></span></a></li>
+						<li class="cert2 certs wow slideInRight"><a href="cwd.html"><h3>CWD<span>Crimeware Defender</span></h3><span><img src="images/c-cwd.png" alt=""></span></a></li>
+						<li class="cert3 certs wow slideInLeft"><a href="aptd.html"><h3>APTD<span>APT Defender</span></h3><span><img src="images/c-aptd.png" alt=""></span></a></li>
+						<li class="cert4 certs wow slideInRight"><a href="wed.html"><h3>WED<span>Windows Exploits Defender</span></h3><span><img src="images/c-wed.png" alt=""></span></a></li>
+						<li class="cert5 certs wow slideInLeft"><a href="tia.html"><h3>TIA<span>Threat Intelligence Analyst</span></h3><span><img src="images/c-tia.png" alt=""></span></a></li>
+						<li class="cert6 certs wow slideInRight"><a href="ntd.html"><h3>NTD<span>Network Attacks Defender</span></h3><span><img src="images/c-ntd.png" alt=""></span></a></li>
+						<li class="cert7 certs wow slideInLeft"><a href="wad.html"><h3>WAD<span>Web Attacks Defender</span></h3><span><img src="images/c-wad.png" alt=""></span></a></li>
+						<li class="cert8 certs wow slideInRight"><a href="led.html"><h3>LED<span>Linux Exploits Defender</span></h3><span><img src="images/c-led.png" alt=""></span></a></li>
+					</ul>
+				</section>
+			</div>			
+		</div>
+		<!-- section 2 -->
+		<div id="howtoworks" class="separate-section"></div>
+		<div class="container-fluid r-large">
+			<div class="container">
+				<section id="seccion2" class="seccion-pd">
+					<h2>How it<span> works</span></h2>
+						<div class="colm-large">
+							<div class="colm-one  wow slideInLeft">
+								<img src="images/works.png" alt="How to works">
+							</div>
+							<div class="colm-two wow slideInRight">
+								<p>
+									Click on “Read more” in the Certification you are interested, a “Register” option will be available, click on the link to submit your application. There will be a field in the register form that says “
+									Finally, you will receive an email from HackDef with all the instructions to access the Academy!
+								</p>
+								<p>
+									By attending a certification, you will receive access to our private Social Network, where you can interact with other students, instructors, participate on CTF challenges, leader board of the best students in the cert, and of course attend classes, a real virtual Academy!!
+								</p>
+								<p>
+									Once the classes are completed you can register to your final exam to get certified. The final exam is a real world Capture the Flag (CTF) contest where you have 48 hours to solve the challenges assigned. <span class="color1">Are you the best?</span> <span class="color2">Prove it!</span>
+								</p>
 							</div>
 						</div>
-					</div>
-					<!--  -->
-					<div class="sc-cont">
-						<div class="blq-right-logo blq-logo">
-							<a data-toggle="modal" data-target="#cmsd" src="#"><img src="images/logo-hdef.png" alt="Hack Defender"></a>
-						</div>
-						<div class="blq-cont-left blq-cont">
-							<h3>Cyber Malicious Software Defender<span>CMSD</span></h3>
-							<p>Did you hear about Ploutus or Padpin/Tyupkin or more recently Suceful ATM Malware affecting banks
-							worldwide?</p>
-							<p>The researcher who dissected those threats for the first time to the world has prepared this amazing
-							and first ATM Malware training of its kind.</p>
-							<p>Learn how the malware is transferred to the ATM,how Ploutus spit out money by sending a SMS
-							message,how Tyupkin intercept the keys entered via the Pinpad or how Suceful plays with the
-							sensors to avoid raising an alarm,and many more techniques!</p>
-							<p>All those techniques learned using a REAL ATM,come and learn how to protect your cash if you are a
-							bank or how to prevent being stolen if you are the cardholder.</p>
-						</div>
-						<div class="modal fade" id="cmsd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-										<h4 class="modal-title" id="myModalLabel">Cyber Malicious Software Defender<span>CMSD</h4>
-									</div>
-									<div class="modal-body">
-										<div class="embed-responsive embed-responsive-16by9">
-											<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/dP15zlyra3c?html5=1"></iframe>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 				</section>
 			</div>
+		</div>
+		<!-- section 3 -->
+		<div id="charity" class="separate-section bg-w"></div>
+		<div class="container-fluid r-large r-l-w">
+			<div class="container">
+				<section id="seccion3" class="seccion-pd row-altern">
+					<h2>Char<span>ity</span></h2>
+						<div class="colm-large">
+							<div class="colm-one  wow slideInRight">
+								<img src="images/charity.png" alt="How to works">
+							</div>					
+							<div class="colm-two wow slideInLeft">
+								<p>
+									Helping the needy is a mandatory action at Hack Defender. There is no better blessing than helping people just to see a smile on his face or even sometimes to save lives. Because of this, we have a list of charities where we contribute 10% of the money received for the certification, this means, you are also helping others indirectly!
+								</p>
+								<p>
+									If you have a charity in your country you want to propose, please send all the official documentation via Contact form to validate it and hopefully add it to the list.
+								</p>
+								<p>
+									Current Charities:
+								</p>
+								<p>
+									<strong>St. Jude Children’s Research Hospital</strong>
+								</p>
+								<p>
+									St. Jude is leading the way the world understands, treats and defeats childhood cancer and other life-threatening diseases.
+
+									URL: <a href="https://www.stjude.org/">https://www.stjude.org/</a>
+
+								</p>
+								<p>
+									<strong>Children International</strong>
+								</p>
+								<p>
+									Like the world-changers who support our organization, we are focused on making a long-term impact by helping kids living in poverty. We have a bold vision: graduating healthy, educated, empowered and employed young adults from our program so they can achieve the goal of breaking the cycle of poverty. Period.
+								</p>
+								<p><a href="http://www.children.org">URL: www.children.org</a></p>
+								<p><strong>Los Ojos de Dios</strong></p>
+								<p>
+									A private not-for-profit in Mexico and the USA dedicated to serving children and providing them with the love and care they were deprived of when someone threw them away because of their birth defects. Children found everyday in the streets, churches, hallways and doorsteps all throughout the state of Chihuahua, Mexico. 
+								</p>
+								<p><a href="http://www.ojosdedios.org/">URL: http://www.ojosdedios.org/</a></p>	
+							</div>					
+						</div>
+				</section>
+			</div>
+		</div>
 </div>
+<!-- Login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">ATM Malware Defender<span>ATMD (On-site only)</span></h4>
+			</div>
+			<div class="modal-body">
+				<form id="signin" class="navbar-form" role="form">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">                                        
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">                                        
+					</div>
+
+					<button type="submit" class="btn btn-primary">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
 <footer style="background: green;">
 	<div class="container">
-		<h2>este es el footer</h2>
+		<h2></h2>
 	</div>
 </footer>
 <!-- Scripts +++++++++++++++++++++ -->
