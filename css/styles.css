@@ -125,7 +125,7 @@ body .carousel-inner > .item{min-height: auto;}
 .section-cont h3{color:#46bc08;font-family:"agencyfb",Roboto,sans-serif;text-shadow:1px 1px 0 #000000;margin-top: 0;}
 .section-cont h3 span{color:#ffffff;margin-left:10px;}
 .section-cont p{font-weight:300;text-shadow:1px 1px 0 #000000;color: #fff;}
-.section-cont .blq-logo img{opacity:0.25;}
+.section-cont .blq-logo img{opacity:0.65;}
 
 .sc-cont ul{padding: 0;}
 .sc-cont ul li a{font-family:'Roboto',Verdana,sans-serif;color: #333;text-decoration: none;display: flex;}
@@ -230,7 +230,7 @@ body.certi-section.tia .section-cont h3{color: #51956A;}
 /* NTD */
 
 body.certi-section.ntd .section-cont{height: 220px;}
-body.certi-section.ntd .section-cont h3{color: #C2843F;}
+body.certi-section.ntd .section-cont h3{color: #ffa500;}
 
 /* WAD */
 
